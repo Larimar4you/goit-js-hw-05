@@ -13,13 +13,13 @@
 */
 `use strict`;
 
-function isEnoughCapacity(products, containerSize) {
-    let total = 0;
-    for (let products in products) {
-      total += products[product];
-    } 
-    return totalProducts <= containerSize;
-}
+const getTotalBalanceByGender = (users, gender) => {
+  return users
+  .filter(user => user.gender === gender)
+  .reduce((total, user) => {
+    return total + user.balance 
+  }, 0);
+};
 
 /* Перевiрка функцii */
 const clients = [
