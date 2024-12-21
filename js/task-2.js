@@ -19,16 +19,10 @@
 */
 
 `use strict`;
-function calcAverageCalories(days) {
-  let totalCalories = 0;
-  if (days.length === 0) {
-    return 0; 
-  }
-  for (let day of days) {
-    totalCalories += day.calories;
-  }
-  return totalCalories / days.length;
-}
+const getUsersWithFriend = (users, friendName) => {
+  return users.filter(user => user.friends.includes(friendName));
+};
+  
 
 /* Перевiрка функцii */
 const allUsers = [
