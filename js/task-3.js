@@ -8,25 +8,8 @@
 */
 
 `use strict`;
-const profile = {
-  username: "Jacob",
-  playTime: 300,
-
-  // Метод для зміни імені профілю
-  changeUsername: function(newName) {
-    this.username = newName;
-  },
-
-  // Метод для оновлення кількості годин
-  updatePlayTime: function(hours) {
-    this.playTime += hours;
-  },
-
-  // Метод для отримання інформації про профіль
-  getInfo: function() {
-    const amount = this.playTime;
-    return `${this.username} has ${amount} active hours!`;
-  }
+const sortByDescendingFriendCount = (users) => {
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
 };
 
     /* Перевiрка функцii */
