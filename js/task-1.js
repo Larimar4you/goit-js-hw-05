@@ -4,20 +4,12 @@
 масив об’єктів користувачів. Функція має повертати масив імен усіх користувачів 
 (властивість name) із масиву users.
 
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності 
-її роботи. У консоль будуть виведені результати її викликів.
-
-
 */
 `use strict`;
 
-function isEnoughCapacity(products, containerSize) {
-    let total = 0;
-    for (let products in products) {
-      total += products[product];
-    } 
-    return totalProducts <= containerSize;
-}
+const getUserNames = (users) => {  
+  return users.map(user => user.name);
+};
 
 /* Перевiрка функцii */
 console.log(
